@@ -14,13 +14,13 @@ npm install
 
 ```
 DATABASE_URL="mysql://username:password@localhost:3306/your_db_name"
-JWT_SECRET=jwt_secret
 ```
 
 ### 4. Migrate Prisma scheme
 
 ```bash
 npx prisma migrate dev --name init
+npm run prisma:seed
 ```
 
 ### 5. Run the project
